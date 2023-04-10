@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form class="form" id="myForm">
+        <div class="inputblock">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" placeholder=" Enter Name" minlength="3" maxlength="25"
+                pattern="[a-zA-Z][a-zA-Z0-9\s]*" required><br><br>
+        </div>
+        <div class="inputblock">
+            <label for="description">Description : </label>
+            <input type="text" id="description" name="description" placeholder="Enter Description" minlength="3"
+                maxlength="150" required><br><br>
+        </div>
+        <div class="inputblock">
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+                <option value="Open">Open</option>
+                <option value="Error">Error</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Success">Success</option>
+            </select><br><br>
+        </div>
+        <div class="inputblock">
+            <label for="rate">Rate : </label>
+            <input type="number" id="rate" name="rate" placeholder="Enter rate" min="0" required>
+        </div>
+        <div class="inputblock">
+            <label for="balance">Balance : </label>
+            <input type="number" id="balance" name="balance" placeholder="Enter balance" required>
+        </div>
+        <div class="inputblock">
+            <label for="Deposit">Deposit</label>
+            <input type="number" id="Deposit" name="Deposit" placeholder="Enter deposit" min="0" required>
+        </div>
+
+        <div class="twobtn">
+            <button class="cancelBtn" type="reset" onclick="('myForm')[0].reset()">Cancel</button>
+            <button id="saveBtn" class="saveBtn" type="submit">Save</button>
+            <button id="updateBtn" class="updateBtn" type="submit" disabled>Update</button>
+        </div>
+    </form>
+
+    <div class="mainContainer">
+
+        <div class="navbar">
+            <select id="filter-select">
+                <option value="Open">Open</option>
+                <option value="Error">Error</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Success">Success</option>
+            </select>
+            <button class="addbutton" type="button" onclick="window.location.href = 'index.html';">+ Add
+                customer</button>
+        </div>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>NAME</td>
+                    <td>DESCRIPTION</td>
+                    <td>STATUS</td>
+                    <td>RATE</td>
+                    <td>BALANCE</td>
+                    <td>Deposit</td>
+                    <td>ACTION</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

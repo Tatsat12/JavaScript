@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputblock {
+    width: 500px;
+
+}
+
+input,
+select {
+    width: 100%;
+    height: 40px;
+
+}
+
+.twobtn {
+    background-color: rgba(229, 229, 231, 0.986);
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: right;
+}
+
+.saveBtn {
+    width: 120px;
+    height: 40px;
+}
+
+.cancelBtn {
+    width: 120px;
+    height: 40px;
+}
+
+.mainContainer {
+    background-color: white;
+    outline: 1px solid black;
+    border-collapse: collapse;
+    font-size: large;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addbutton {
+    background-color: rgb(79, 132, 212);
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.mainContainer table thead {
+    background-color: aliceblue;
+
+}
+
+table td {
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    width: 190px;
+    text-align: center;
+}
+
+#filter-select {
+    width: 120px;
+}
